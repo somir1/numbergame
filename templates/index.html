@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <title>The great Numbers game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="con1">
+            <h1>Welcome to the number game!</h1>
+            <h2>I am thinking of a number between 1 and 100</h2>
+            <h2>Take a Guess</h2>
+        </div>
+        <form action="/checkguess" method="POST">
+            <div class="con2">
+                <input class="size" type="text" name="guessinput">
+                <button type="submit" value="check">Check Guess</button>
+                <h3>{{text}}</h3>
+                {{reset}}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
